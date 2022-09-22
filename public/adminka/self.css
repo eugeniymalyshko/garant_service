@@ -1,0 +1,13 @@
+.info span {
+    color: rgba(255,255,255,.8);
+}
+.card .overlay {
+    display: none;
+}
+.photo-box {
+    margin-bottom: 30px;
+}
+.photo-box img {
+    width: 100px;
+    height: 70px;
+}

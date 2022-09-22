@@ -1,0 +1,995 @@
+html, body {
+	height: 100%;
+}
+body {
+	background-color: #fff;
+	font-family: 'Open Sans', sans-serif;
+	color: #000;
+	font-size: 16px;
+}
+#wrapper {
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+}
+.content {
+	flex: 1 0 auto;
+}
+li {
+	list-style: none;
+}
+a {
+	text-decoration: none;
+}
+.title {
+	text-transform: uppercase;
+}
+.b-pressed:active {
+	border: 0;
+}
+.quantity-window {
+	max-width: 40px;
+}
+.overlay-s {
+	position: absolute;
+	background: rgba(10, 10, 10, 0.2);
+	left: 0;
+	top: 0;
+	min-width: 100%;
+	min-height: 200px;
+}
+.shadow_s {
+	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+#request textarea {
+	resize: none;
+}
+.personal-data {
+	margin-bottom: 15px;
+}
+.personal-data span {
+	line-height: 1;
+	font-size: 12px;
+	margin-left: -10px;
+}
+.form-check-input {
+	margin-top: 0.4rem;
+}
+.hid {
+	margin-top: 1em;
+	color: #fff;
+}
+.small-banner {
+	background: url("../images/banner/banner_new.png") no-repeat;
+	background-size: cover;
+	background-position: 0 20%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 200px;
+	width: 100%;
+	z-index: -1;
+}
+.s-banner-frame {
+	height: 200px;
+	margin-top: -7.7em;
+}
+.s-banner-title {
+	position: absolute;
+	bottom: 2em;
+	left: 0;
+	width: 100%;
+}
+.valid-tooltip {
+	position: relative;
+}
+/*--------------------------------------------------------
+ [ start of HEADER ]
+ -------------------------------------------------------*/
+#sp-header {
+	position: relative;
+	z-index: 99;
+}
+.overlay {
+	position: absolute;
+	left: 0;
+	top: 0;
+	background: rgba(10, 10, 10, 0.2);
+	min-width: 100%;
+	min-height: 100vh;
+	z-index: -1;
+}
+.sp-contact-info {
+	list-style: none;
+	color: #fff;
+	font-size: 0.9em;
+	margin-top: 15px;
+	margin-bottom: 0;
+	padding: 0;
+}
+.sp-contact-info li {
+	display: inline-block;
+	margin: 0 10px;
+	font-size: 91%;
+	white-space: nowrap;
+}
+.sp-contact-info li a {
+	color: #fff;
+}
+.navbar  {
+	width: 100%;
+	margin-top: -1%;
+}
+.navbar-brand {
+	background: url(../images/garant-service-logo.png) no-repeat;
+	background-size: cover;
+	background-position: center;
+	width: 100px;
+	height: 100px;
+}
+.slogan h6 {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 300;
+	letter-spacing: 1.5px;
+	line-height: 1.2;
+	color: #fff;
+	margin-left: 10px;
+}
+.navbar button {
+	font-weight: 100;
+	border: solid 1px #fff;
+	margin-top: -5px;
+}
+ .navbar-toggler .fas  {
+	color: #fff;
+	font-size: 1.2em;
+	padding: 1px;
+}
+.navbar-nav li {
+	text-transform: uppercase;
+	font-size: 0.8em;
+	letter-spacing: 0.1em;
+}
+.navbar-nav li a {
+	transition: 0.4s;
+	color: #fff;
+	border-radius: 0.4em;
+}
+.navbar-nav li a:hover {
+	transition: 0.3s;
+	color: #000;
+	background: #F2B705;
+	border-radius: 0.4em;
+}
+.dropdown-menu.show {
+	background-color: rgba(0,0,0, 0.1);
+}
+.banner {
+	background: url(../images/banner/banner_new.png) no-repeat;
+	background-size: cover;
+	background-position:  top;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100vh;
+	z-index: -2;
+}
+.caption {
+	position: absolute;
+	font-family: 'Montserrat', sans-serif;
+	color: #fff;
+	bottom: 11em;
+	z-index: 2;
+}
+.caption p {
+	font-weight: 300;
+	letter-spacing: 0.5px;
+}
+.banner-frame {
+	position: relative;
+	height: 100vh;
+	margin-top: -7.7em;
+}
+/*--------------------------------------------------------
+ [ end of HEADER ]
+ -------------------------------------------------------*/
+
+/*-------------------------------------------------------
+ [ start of SERVICE ]
+-------------------------------------------------------*/
+#service {
+	padding: 20px 0 90px;
+	background: #fff;
+}
+#service h3 {
+	padding: 30px 0 10px 0;
+}
+#service .col-md-6:nth-child(n+4) {
+	padding-top: 20px;
+}
+.service-box {
+	height: 220px;
+	position: relative;
+	overflow: hidden;
+	margin-top: 15px;
+}
+.service-title {
+	position: relative ;
+	display: inline-block;
+	width: 100%;
+	text-align: center;
+	font-size: 1.2em;
+	text-transform: uppercase;
+	background-color: #000;
+	color: #fff;
+	opacity: .7;
+	padding: 1px 0;
+	margin: 0 auto;
+}
+.service-img {
+	width: 100%;
+	height: 100%;
+}
+.block-overlay {
+	display: none;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	top: 0;
+	background:rgba(255,255,255, 0.8);
+	line-height: 1.5;
+    padding:15px 25px;
+}
+.service-box:hover .block-overlay {
+	display: block;
+}
+#details {
+	margin-left: 50%;
+	transform: translate(-50%, 0);
+}
+/*--------------------------------------------------------
+ [ end of SERVICE ]
+ -------------------------------------------------------*/
+
+/*--------------------------------------------------------
+ [ start of ADVANTAGES ]
+ -------------------------------------------------------*/	
+#advantages {
+	padding: 20px 0 110px;
+	background: #f1f1f1;
+}
+#advantages h3 {
+	padding: 55px 0 40px;
+}
+.advantage-box {
+	margin-top: 15px;
+}
+.advantage-box:nth-child(n+3) {
+	margin-top: 80px;
+}
+.advantage-1, .advantage-2, .advantage-3, .advantage-4 {
+	margin: 0;
+	position: relative;               
+   	top: 50%;                         
+   	transform: translate(0, -50%);
+   	line-height: 1.7; 
+}
+.prof {
+	background: url(../images/advantages/experience.jpg) no-repeat;
+	background-size: cover;
+	background-position: center;
+	height: 300px;
+}
+.expir {
+	background: url(../images/advantages/professionalism.jpg) no-repeat;
+	background-size: cover;
+	background-position: center;
+	height: 300px;
+}
+.love {
+	background: url(../images/advantages/love.jpg) no-repeat;
+	background-size: cover;
+	background-position: center;
+	height: 300px;
+}
+.any-dif {
+	background: url(../images/advantages/dificult-dish.jpg) no-repeat;
+	background-size: cover;
+	background-position: center;
+	height: 300px;
+}
+div.advantage-expl > p {
+	font-size: 1.2em;
+	line-height: 2;
+}
+/*--------------------------------------------------------
+ [ end of ADVANTAGES ]
+ -------------------------------------------------------*/
+
+/*--------------------------------------------------------
+ [ start of LOCATIONS ]
+ -------------------------------------------------------*/
+#locations {
+	background-color: #fff;
+	padding-bottom: 85px;
+}
+#locations h3 {
+	padding: 70px 0 50px;
+}
+.locations-box {
+	height: 220px;
+	width: 100%;
+	margin-top: 20px;
+	margin-bottom: 45px;
+	position: relative;
+	overflow: hidden;
+}
+.locations-box span {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 100%;
+	text-align: center;
+	font-size: 1.2em;
+	text-transform: uppercase;
+	background-color: #000;
+	color: #fff;
+	opacity: .7;
+}
+.location-img {
+	width: 100%;
+	height: 100%;
+}
+/*--------------------------------------------------------
+ [ end of LOCATIONS ]
+ -------------------------------------------------------*/
+
+/*-------------------------------------------------------
+ [ start of TESTIMONIALS-WIDGET ]
+-------------------------------------------------------*/
+#testimonials-widget {
+ 	background-color: #f1f1f1;
+}
+#testimonials-widget h4 {
+	padding: 80px 0 15px;
+}
+.block-one {
+	padding: 15px 0;
+	position: relative;
+}
+.inner-testimonial {
+	text-align: center;
+	max-width: 600px;
+	margin: auto;
+}
+.name {
+	font-weight: 900;
+}
+.text-testimonial {
+	padding:10px 0 60px;
+	font-size: 18px;
+	font-family: "Montserrat", sans-serif;
+	font-weight: 300;
+	line-height: 1.8;
+}
+.block-items {
+	cursor: default;
+}
+/*--------------------------------------------------------
+ [ end of TESTIMONIALS-WIDGET ]
+ -------------------------------------------------------*/
+
+/*--------------------------------------------------------
+ [ start of FOOTER ]
+ -------------------------------------------------------*/
+.footer {
+	flex: 0 0 auto;
+}
+#list-chart {
+	background-color: #f1f1f1;
+	padding-bottom: 40px;
+}
+#list-chart h5 {
+	padding-top: 60px;
+}
+#list-chart li {
+	padding: 5px 0;
+	color: #fff;
+	transition: 0.4s;
+}
+#list-chart a, .more-lists {
+	padding: 5px;
+	transition: 0.4s;
+}
+#list-chart a:hover, .more-lists:hover {
+	color: #fff;
+	transition: 0.4s;
+	background-color: #28a745;
+	border-radius: 0.4em; 
+}
+.footer-service ul {
+	padding-top: 10px;
+	padding-left: 0;
+}
+.footer-service li a {
+	text-decoration: none;
+	color: #000;
+}
+.hidden-list {
+	display: none;
+}
+.more-lists {
+	display: inline-block;
+	cursor: pointer;
+	margin: 10px 0;
+	color: #000;
+}
+#footer-bottom {
+	padding: 25px 0;
+	background-color: #141414;
+	color: #fff;
+	font-size: 14px;
+}
+#footer-bottom a {
+	color: #fff;
+}
+.copyright {
+	padding: 0;
+}
+.sp-social-icons {
+	padding: 0;
+	margin: -5px -10px;
+}
+.sp-social-icons > li {
+	display: inline-block;
+	margin: auto 8px;
+	font-size: 1.5em;
+	white-space: nowrap;
+}
+/*--------------------------------------------------------
+ [ end of FOOTER ]
+ -------------------------------------------------------*/
+
+/*--------------------------------------------------------
+ [ start of SCROLL TO TOP ]
+ -------------------------------------------------------*/
+div.scrollup {
+	position: fixed;
+	color: #fff;
+	background-color: rgb(152 152 152);
+	right: 20px;
+	bottom: 75px;
+	padding: 4px 10px;
+	font-size: 20px;
+	border-radius: 4px;
+	cursor: pointer;
+	display: none;
+	text-align: center;
+	z-index: 1;
+}
+div.scrollup:hover {
+  background-color:rgb(50 50 50);
+}
+/*--------------------------------------------------------
+ [ end of SCROLL TO TOP ]
+ -------------------------------------------------------*/
+
+/*--------------------------------------------------------
+ [ start of page ABOUT ]
+ -------------------------------------------------------*/
+.explanation {
+	margin: 60px 0;
+	line-height: 2;
+}
+.explanation h3 {
+	margin: 35px 0;
+}
+/*--------------------------------------------------------
+ [ ENF of page ABOUT ]
+ -------------------------------------------------------*/
+
+/*--------------------------------------------------------
+[ start of page GALLERY ]
+--------------------------------------------------------*/
+#gallery {
+	padding: 50px 0;
+}
+#gallery h2 {
+	margin: 45px 0 45px;
+}
+.photo-box {
+	height: 117px;
+	margin-bottom: 30px;
+	overflow: hidden;
+	/*box-shadow: 10px 10px 8px #888888;*/
+}
+.photo-sm {
+	width: 100%;
+	height: 100%;
+}
+/*--------------------------------------------------------
+[ end of page GALLERY ]
+--------------------------------------------------------*/
+
+/*--------------------------------------------------------
+ [ start of page MENU ]
+ -------------------------------------------------------*/
+#menu {
+	margin-bottom: 65px;
+}
+#menu h3:first-child {
+	margin-top: 60px;
+}
+#menu h3 {
+	margin: 30px;
+}
+table {
+	margin-bottom: 30px;
+}
+table caption {
+	caption-side: top;
+	text-align: center;
+	color: #000;
+}
+/*--------------------------------------------------------
+ [ END of page MENU ]
+ -------------------------------------------------------*/
+
+/*--------------------------------------------------------
+ [ start of page REPORTS ]
+ -------------------------------------------------------*/
+#reports {
+	margin: 65px;
+}
+#reports a {
+	color: #141414;
+}
+#reports h3 {
+	margin: 30px;
+}
+/*--------------------------------------------------------
+ [ END of page REPORTS ]
+ -------------------------------------------------------*/
+
+/*--------------------------------------------------------
+ [ start of page CONTACTS ]
+ -------------------------------------------------------*/
+#contacts {
+	margin: 60px 0;
+}
+#contacts a {
+	text-decoration: none;
+	color: #141414;
+	transition: 0.3s;
+}
+#contacts p a:hover {
+	transition: 0.3s;
+	color: #fff;
+	background: #28a745;
+	border-radius: 0.4em;
+	padding: 0.2em 0.3em;
+}
+.map {
+	padding-top: 20px;
+}
+/*--------------------------------------------------------
+ [ END of page CONTACTS ]
+ -------------------------------------------------------*/
+
+/*--------------------------------------------------------
+ [ start of SERVICE DETAILED ]
+ -------------------------------------------------------*/
+#service-detailed {
+	padding: 10px 0;
+}
+#service-detailed h2 {
+	margin-bottom: 15px;
+}
+.services-details {
+	line-height: 1.5;
+	font-family: 'Montserrat', sans-serif;
+}
+.img-service-1 {
+	width: 200px;
+	height: 130px;
+	float: left;
+	margin: 7px 15px 0 0;
+}
+.img-service-2 {
+	width: 390px;
+	height: 240px;
+	margin: 10px 45px 0 30px;
+	float: right;
+}
+.main-description p {
+	line-height: 2;
+}
+.question {
+	margin: 30px 0;
+}
+#service-detailed li, .explanation li {
+	list-style: disc;
+}
+.lists li, .our-advantage {
+	line-height: 2;
+	padding-top: 10px;
+}
+.benefits {
+	margin-bottom: 20px;
+}
+.benefits h3 {
+	margin: 35px 0;
+}
+.benefits li {
+	line-height: 2.5;
+}
+.our-advantage, .question {
+	clear: both;
+}
+.services-details button {
+	display: block;
+	margin: 0 auto;
+}
+.service-d-box button {
+	margin: 30px auto;
+}
+/*--------------------------------------------------------
+ [ end of SERVICE CAPTION ]
+ -------------------------------------------------------*/
+
+
+/*--------------------------------------------------------
+ [ start of page TESTIMONIALS]
+ -------------------------------------------------------*/
+#testimonials {
+	margin-top: 30px;
+}
+.testimonial {
+	padding-top: 10px;
+	font-size: 18px;
+	font-family: "Montserrat", sans-serif;
+	font-weight: 300;
+	line-height: 1.8;
+}
+.company {
+	padding: 15px 0;
+}
+.date {
+	margin-bottom: 60px;
+
+}
+/*--------------------------------------------------------
+ [ end of page TESTIMONIALS]
+ -------------------------------------------------------*/
+
+/*--------------------------------------------------------
+ [ start of screen and (max-width: 991px) ]
+ -------------------------------------------------------*/
+@media (max-width: 991px) {
+	.banner {
+		background: url(../images/banner/banner_new.png) no-repeat;
+		background-size: cover;
+		background-position:  center;
+	}
+	.s-banner-title {
+		bottom: 1.5em;
+	}
+	.navbar-nav {
+		background-color: #000;
+		opacity: 0.8;
+		height: 100%;
+		z-index: 99;
+	}	
+  	.navbar-nav li > a {
+		text-align: center;
+  		margin: 5px 0;
+  	}
+	.slogan {
+  		margin-right: auto;
+  	}
+  	.caption {
+		top: 23em;
+	}
+	.caption button {
+		font-size: 0.9em;
+		padding: 4px 10px;
+	}
+	.main-service {
+		margin-top: 140px;
+	}
+/********** SERVICE ***********/
+	#service {
+		padding-bottom: 80px;
+	}
+	.main-service {
+		margin-top: 0;
+	}
+	#service h3 {
+		padding-top: 15px;
+		margin-bottom: 6px;
+	}
+	#service .col-md-6:nth-child(n+3) {
+		padding-top: 25px;
+	}
+/********** GALLERY ***********/
+	.photo-box {
+		height: 60px;
+	}
+}
+/*--------------------------------------------------------
+[ end of screen and (max-width: 991px) ]
+-------------------------------------------------------*/
+
+/*--------------------------------------------------------
+ [ start of screen and (max-width: 767px) ]
+ -------------------------------------------------------*/
+@media (max-width: 767px) {
+	.banner {
+		background: url(../images/banner/banner_new.png) no-repeat;
+		background-size: cover;
+		background-position: center;
+	}
+	.s-banner-title {
+		bottom: 0.8em;
+	}
+	.s-banner-frame {
+		height: 205px;
+	}
+	.navbar	{
+		margin-top: 1%;
+	}
+	.navbar-nav {
+		background-color: #000;
+		padding-top: 5px;
+		opacity: 0.8;
+		z-index: 99;
+	}
+	.navbar-nav li > a {
+		text-align: center;
+		font-size: 1.3em;
+		margin: 5px 0;
+	}
+	.navbar-brand {
+		width: 55px;
+		height: 55px;
+	}
+	.slogan h6 {
+		font-weight: 400;
+	}
+	.caption {
+		top: 11em;
+	}
+	.caption button {
+		font-size: 1em;
+		margin-top: 5px;
+		padding: 4px 10px;
+	}
+/********** SERVICE ***********/
+	#service {
+		padding-bottom: 80px;
+	}
+	.main-service {
+		margin-top: 0;
+	}
+	#service h3 {
+		margin-bottom: 6px;
+		padding-top: 15px;
+	}
+	.service-box {
+		height: 100%;
+	}
+	#service .col-md-6:nth-child(n+2) {
+		padding-top: 35px;
+	}
+/********** ADVANTAGES ***********/
+	#advantages {
+		padding-bottom: 50px;
+	}
+	#advantages h3 {
+		padding: 25px 0 0;
+	}
+	.advantage-box {
+		margin-top: 6px;
+	}
+	.advantage-box:nth-child(n+3) {
+		margin-top: 15px;
+	}
+	.col1 {order: 0;}
+	.col2 {order: 1;}
+	.col3 {order: 3;}
+	.col4 {order: 2;}
+	.col5 {order: 4;}
+	.col6 {order: 5;}
+	.col7 {order: 7;}
+	.col8 {order: 6;}
+	.col2, .col3, .col6, .col7 {
+		margin-bottom: 50px;
+	}
+/************ LOCATIONS ************/
+	#locations {
+		padding-bottom: 55px;
+	}
+	#locations h3 {
+		padding: 50px 0 10px;
+	}
+	.locations-box {
+		height: auto;
+		margin: 30px 0 10px;
+	}
+	#testimonials h4 {
+		padding-top: 50px;
+	}
+/********** GALLERY ***********/
+	.photo-box {
+		width: 108px;
+		height: 60px;
+	}
+	.page-title {
+		margin-top: 0.2em;
+	}
+/******** TESTIMONIALS ********/
+	.text-testimonial {
+		font-size: 14px;
+	}
+	.owl-my-nav .owl-prev, .owl-my-nav .owl-next {
+		font-size: 50px;
+	}
+	.owl-my-nav .owl-prev {
+		left: 10px;
+	}
+	.owl-my-nav .owl-next {
+		right: 10px;
+	}
+	#testimonial-button {
+		margin-top: 15px;
+	}
+}
+/*--------------------------------------------------------
+ [ start of screen and (max-width: 480px) ]
+ -------------------------------------------------------*/
+@media (max-width: 480px) {
+	.banner {
+		background: url(../images/banner/banner_new.png) no-repeat;
+		background-size: cover;
+		background-position: left;
+	}
+	.s-banner-title {
+		bottom: 0.7em;
+	}
+	.s-banner-frame {
+		height: 205px;
+	}
+	.navbar-brand {
+		width: 70px;
+		height: 70px;
+	}
+	.slogan h6 {
+		font-weight: 400;
+	}
+	.navbar {
+	margin-top: 2%
+	}
+	.navbar-nav {
+		background-color: #000;
+		opacity: 0.8;
+		padding: 15px 0;
+		z-index: 99;
+	}
+	.navbar-nav li > a {
+		text-align: center;
+		margin: 5px 0;
+		font-size: 1.3em;
+	}
+	.navbar-nav li a:hover {
+		background: none;
+	}
+	.caption {
+		top: 22em;
+	}
+	.caption h4 {
+		font-size: 1.3em;
+	}
+	.caption button {
+		font-size: 0.9em;
+		margin-top: 10px;
+		padding: 4px 10px;
+	}
+/********** SERVICE ***********/
+	#service {
+		padding-bottom: 80px;
+	}
+	.main-service {
+		margin-top: 0;
+	}
+	#service h3 {
+		margin-bottom: 10px;
+	}
+	#service .col-md-6:nth-child(n+2) {
+		padding-top: 25px;
+	}
+/********** ADVANTAGES ***********/
+	#advantages {
+		padding-bottom: 50px;
+	}
+	#advantages h3 {
+		padding: 30px 0 10px;
+	}
+	.advantage-box {
+		margin-top: 10px;
+	}
+	.advantage-box:nth-child(n+3) {
+		margin-top: 15px;
+	}
+	.col1 {order: 0;}
+	.col2 {order: 1;}
+	.col3 {order: 3;}
+	.col4 {order: 2;}
+	.col5 {order: 4;}
+	.col6 {order: 5;}
+	.col7 {order: 7;}
+	.col8 {order: 6;}
+	.col2, .col3, .col6, .col7 {
+		margin-bottom: 30px;
+	}
+/********** LOCATIONS ***********/
+	#locations {
+		padding-bottom: 55px;
+	}
+	#locations h3 {
+		padding: 50px 0 0;
+	}
+	.locations-box {
+		margin: 30px 0 10px;
+	}
+	#testimonials h4 {
+		padding-top: 40px;
+	}
+/*********** ABOUT ************/
+	.explanation {
+		margin: 0;
+	}
+	.explanation h3 {
+		margin: 35px 0 30px;
+	}
+/********** GALLERY ***********/
+	.photo-box {
+		width: 93px;
+		height: 50px;
+	}
+	#service-detailed {
+		padding: 20px 0;
+	}
+	.services-details {
+		font-size: 1em;
+		padding-bottom: 20px;
+	}
+	#list-chart {
+		padding: 15px 0;
+	}
+	#list-chart:first-child {
+		padding-top: 20px;
+	}
+	#list-chart h5 {
+		padding-top: 15px;
+	}
+	div.scrollup {
+		bottom: 5em;
+	}
+	.sp-1 {
+		order: 1;
+		margin-bottom: -10px;
+	}
+	.sp-2 {
+		order: 0;
+		margin-bottom: 10px;
+	}
+/********** TESTIMONIALS ***********/
+	#testimonial-button{
+		margin: 15px;
+	}
+}
+/*--------------------------------------------------------
+ [ end of screen and (max-width: 480px) ]
+ -------------------------------------------------------*/
